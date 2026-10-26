@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy Policy for Rasta – Persian Experience for Jira & Confluence">
+<title>Rasta — Privacy Policy / سیاست حریم خصوصی</title>
+<style>
+:root{color-scheme:light dark;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f7fb;color:#202d42}
+*{box-sizing:border-box}body{margin:0;line-height:1.8}main{max-width:930px;margin:0 auto;padding:28px 20px 70px}
+header{padding:35px 0 20px}h1{font-size:clamp(1.5rem,3vw,2rem);line-height:1.35}h2{font-size:1.25rem;margin-top:1.7em}p,li{max-width:76ch}
+a{color:#225ac5}nav{display:flex;gap:12px;flex-wrap:wrap}nav a{display:inline-flex;border-radius:99px;border:1px solid #ced8eb;padding:4px 14px;text-decoration:none}
+article{background:#fff;color:#1d293e;border:1px solid #dfe6f0;padding:20px clamp(18px,4vw,38px);margin:16px 0 35px;border-radius:18px}
+article p,article li{overflow-wrap:anywhere}article[lang=fa]{font-family:Tahoma,"Segoe UI",sans-serif}article[lang=fa] p,article[lang=fa] li{text-align:start}
+footer{font-size:.87rem;color:#56647a;padding:0 5px}
+@media(prefers-color-scheme:dark){:root{background:#101723;color:#e5ebf5}article{background:#1a2635;color:#eaf0fa;border-color:#364355}a{color:#8eaeff}nav a{border-color:#49546d}footer{color:#afbcd0}}
+</style>
+</head>
+<body><main>
+<header><h1>Rasta — Privacy Policy / سیاست حریم خصوصی</h1><nav aria-label="Policy languages"><a href="#english">English</a><a href="#persian" lang="fa">فارسی</a></nav></header>
+<article id="english" lang="en" dir="ltr"><h1>Rasta Privacy Policy</h1>
+<p><strong>Last updated:</strong> October 26, 2026<br />
+<strong>Applies to:</strong> Rasta – Persian Experience for Jira &amp; Confluence, version 1.2.16</p>
+<h2>1. About Rasta</h2>
+<p>Rasta is an independent browser extension that improves Persian and right-to-left (RTL) presentation in Jira and Confluence, including Persian fonts, date display, and optional Jalali date input. Rasta is not affiliated with or endorsed by Atlassian.</p>
+<h2>2. Site access and on-page processing</h2>
+<p>Rasta operates on a Jira or Confluence site only after you explicitly add or activate its domain and approve the browser's site-access permission. Because users may host Jira or Confluence on their own domains, Rasta can request access to a user-selected HTTP or HTTPS domain. It does not automatically activate on unrelated websites.</p>
+<p>On approved sites, Rasta reads and processes the portions of page content needed for its features—for example, visible text, text direction, issue/table labels and dates, page elements, and date input values. This content may incidentally contain names, issue details, or other information present in your Jira or Confluence instance. Processing occurs in the browser to adjust presentation or help you select and enter Jalali dates; Rasta does not build a database of that page content or send it to the Rasta developer.</p>
+<p>When you use a date-input feature, Rasta may update date fields and dispatch the normal events expected by Jira. Any resulting save or submission is handled by your Jira instance under its own policies; Rasta does not separately upload those form values.</p>
+<h2>3. Information stored by Rasta</h2>
+<p>Rasta stores the following information using Chrome's extension storage:</p>
+<ul>
+<li><strong>Chrome storage sync (<code>chrome.storage.sync</code>):</strong> the site domains you choose to enable; whether each site is Jira or Confluence; and your selected feature settings, such as RTL/mixed-text display, Persian fonts, date display and picker, interface theme, and colors. Settings from older versions may be migrated to the current format.</li>
+<li><strong>Local extension storage (<code>chrome.storage.local</code>):</strong> a temporary pending site activation record (selected domain, site type, timestamp, and a random request identifier), used to complete permission requests even if the popup closes. It is removed when activation is completed or canceled, or treated as expired after a short interval.</li>
+</ul>
+<p>Rasta does not intentionally store page bodies, issue descriptions, messages, credentials, cookies, browser history, or entered date values in its extension storage.</p>
+<h2>4. Data sharing and network activity</h2>
+<p>The reviewed version of Rasta has no built-in analytics, advertising trackers, or developer-operated data collection endpoint and does not send page contents or saved settings to a Rasta-operated server. Its scripts, fonts, and date-picker library are bundled with the extension rather than fetched as executable code from an external service.</p>
+<p>Because Rasta uses <code>chrome.storage.sync</code>, Chrome may synchronize your saved settings and approved site domains through Google's browser synchronization infrastructure, depending on your Chrome configuration. Google's handling of that synchronization is governed by its own terms and privacy policies. Rasta does not control that service.</p>
+<p>Rasta works within Jira and Confluence sites you choose. Those websites may themselves send or store information as you use them; their operators' policies, not this policy, govern that activity. Rasta does not sell user data or share page data with advertisers or data brokers.</p>
+<h2>5. Permissions</h2>
+<ul>
+<li><strong><code>storage</code>:</strong> save your preferences and explicitly configured sites, and temporarily record pending activation.</li>
+<li><strong><code>activeTab</code>:</strong> inspect the current tab's URL after you open the popup so you can select the site to enable.</li>
+<li><strong><code>scripting</code>:</strong> apply bundled layout and date scripts on approved Jira/Confluence domains.</li>
+<li><strong><code>offscreen</code>:</strong> detect the browser's light/dark color preference for the toolbar icon.</li>
+<li><strong>Optional site access (<code>*://*/*</code>):</strong> support user-specified Jira/Confluence hostnames. Access for an individual hostname is requested when you choose to enable it; the wildcard is not automatically granted for every website.</li>
+</ul>
+<h2>6. Your choices and deletion</h2>
+<p>You may disable individual features in Rasta's popup or settings. You can remove an approved domain in the extension's Options page; Rasta attempts to revoke its no-longer-needed site permission and unregister its scripts. You can also manage site permissions in Chrome or uninstall Rasta. Removing a domain does not automatically erase unrelated preferences, and Chrome-synced settings may remain subject to Chrome's own synchronization and retention behavior.</p>
+<h2>7. Security and retention</h2>
+<p>Rasta limits its functionality to configured sites and uses Chrome's permission and extension storage APIs. Site configuration and preferences remain stored until you change or remove them, reset the relevant browser/extension storage, or uninstall the extension, subject to Chrome Sync behavior. Rasta does not maintain a developer-controlled user-data repository or retention schedule for page content.</p>
+<h2>8. Children, policy updates, and contact</h2>
+<p>Rasta is a productivity/accessibility enhancement, not a service directed at children. We may update this policy when the extension's functionality or data practices change, and will update the date above. For privacy questions, contact <strong>reza.roohafza1998@gmail.com</strong>.</p>
+<h2>9. Chrome Web Store Limited Use</h2>
+<p>Rasta's use of information received from Google APIs adheres to the <strong>Chrome Web Store User Data Policy</strong>, including its <strong>Limited Use</strong> requirements. User data is used only to provide or improve the extension's disclosed functionality and is not sold or used for personalized advertising or creditworthiness decisions.</p>
+</article>
+<article id="persian" lang="fa" dir="rtl"><h1>سیاست حریم خصوصی راستا (Rasta)</h1>
+<p><strong>آخرین به‌روزرسانی:</strong> ۴ آبان ۱۴۰۵ (۲۶ اکتبر ۲۰۲۶)<br />
+<strong>مربوط به:</strong> افزونه Rasta – Persian Experience for Jira &amp; Confluence، نسخه 1.2.16</p>
+<h2>۱. درباره راستا</h2>
+<p>راستا افزونه‌ای مستقل برای بهبود نمایش فارسی و راست‌به‌چپ (RTL) در Jira و Confluence است. قابلیت‌های آن شامل فونت فارسی، نمایش تاریخ شمسی و ورود اختیاری تاریخ جلالی است. راستا هیچ وابستگی یا تأیید رسمی از طرف Atlassian ندارد.</p>
+<h2>۲. دسترسی به سایت و پردازش محتوای صفحه</h2>
+<p>راستا فقط پس از اینکه خودتان دامنه Jira یا Confluence را اضافه یا فعال کنید و مجوز دسترسی مرورگر را بپذیرید، روی آن سایت اجرا می‌شود. چون این سرویس‌ها ممکن است روی دامنه اختصاصی هر سازمان نصب شده باشند، راستا می‌تواند برای دامنه HTTP یا HTTPS انتخاب‌شده از شما مجوز بگیرد؛ روی سایت‌های نامرتبط به‌صورت خودکار فعال نمی‌شود.</p>
+<p>در سایت‌های تأییدشده، راستا بخش‌های لازم از محتوای صفحه را برای قابلیت‌های خود می‌خواند و در همان مرورگر پردازش می‌کند؛ مثلاً متن قابل‌نمایش، جهت نوشتار، عنوان‌ها و برچسب‌های جدول‌ها و وظایف، تاریخ‌ها، عناصر صفحه و مقدار فیلدهای تاریخ. این محتوا ممکن است به‌طور اتفاقی شامل نام افراد، جزئیات وظایف یا اطلاعات دیگری از محیط Jira و Confluence شما باشد. این پردازش برای اصلاح نمایش یا کمک به انتخاب و ورود تاریخ شمسی انجام می‌شود؛ راستا پایگاه داده‌ای از محتوای صفحات ایجاد نمی‌کند و آن را برای توسعه‌دهنده ارسال نمی‌کند.</p>
+<p>هنگام استفاده از قابلیت ورود تاریخ، راستا ممکن است فیلد تاریخ و رویدادهای معمول آن را در صفحه به‌روزرسانی کند. ذخیره یا ارسال نهایی فرم توسط همان سامانه Jira و طبق سیاست‌های آن انجام می‌شود؛ راستا مقدار فرم را جداگانه آپلود نمی‌کند.</p>
+<h2>۳. اطلاعات ذخیره‌شده</h2>
+<p>راستا از فضای ذخیره‌سازی مخصوص افزونه‌های Chrome استفاده می‌کند:</p>
+<ul>
+<li><strong><code>chrome.storage.sync</code>:</strong> دامنه‌هایی که خودتان فعال کرده‌اید، نوع هر سایت (Jira یا Confluence) و تنظیمات انتخابی مانند راست‌به‌چپ بودن متن، فونت فارسی، نمایش تاریخ شمسی، انتخابگر تاریخ، حالت ظاهری و رنگ‌ها. اطلاعات نسخه‌های قدیمی ممکن است به قالب جدید منتقل شوند.</li>
+<li><strong><code>chrome.storage.local</code>:</strong> یک رکورد موقت برای درخواست فعال‌سازی سایت (دامنه، نوع سایت، زمان درخواست و شناسه تصادفی) تا اگر پنجره افزونه بسته شد، درخواست مجوز قابل تکمیل باشد. این رکورد پس از تکمیل یا لغو حذف می‌شود یا پس از مدت کوتاهی منقضی تلقی می‌شود.</li>
+</ul>
+<p>راستا عمداً متن کامل صفحه، شرح وظایف، پیام‌ها، اطلاعات ورود، کوکی‌ها، سابقه مرور وب یا تاریخ‌های واردشده را در فضای ذخیره‌سازی افزونه ثبت نمی‌کند.</p>
+<h2>۴. اشتراک‌گذاری و ارتباطات شبکه</h2>
+<p>در نسخه بررسی‌شده، راستا سامانه تحلیل رفتار، ردیاب تبلیغاتی یا مسیر ارسال اطلاعات به سرور توسعه‌دهنده ندارد و محتوای صفحات یا تنظیمات ذخیره‌شده را به سرور متعلق به راستا ارسال نمی‌کند. اسکریپت‌ها، فونت‌ها و کتابخانه تقویم در خود افزونه قرار دارند و کد اجرایی از سرویس بیرونی دریافت نمی‌کنند.</p>
+<p>از آنجا که راستا از <code>chrome.storage.sync</code> استفاده می‌کند، Chrome ممکن است بسته به تنظیمات مرورگر شما، دامنه‌های انتخاب‌شده و تنظیمات را از طریق زیرساخت همگام‌سازی گوگل بین مرورگرها همگام کند. نحوه پردازش این اطلاعات توسط گوگل تابع سیاست‌های خود گوگل است و تحت کنترل راستا نیست.</p>
+<p>راستا روی Jira و Confluence انتخاب‌شده توسط شما کار می‌کند. این وب‌سایت‌ها ممکن است در جریان استفاده معمول، اطلاعاتی را ارسال یا ذخیره کنند که مشمول سیاست‌های مسئولان همان سامانه‌هاست. راستا اطلاعات کاربران را نمی‌فروشد یا داده‌های صفحات را در اختیار تبلیغ‌دهندگان و واسطه‌های داده قرار نمی‌دهد.</p>
+<h2>۵. دلیل درخواست مجوزها</h2>
+<ul>
+<li><strong><code>storage</code>:</strong> ذخیره تنظیمات و سایت‌های انتخابی و نگهداری موقت وضعیت فعال‌سازی.</li>
+<li><strong><code>activeTab</code>:</strong> خواندن آدرس تب جاری زمانی که پنجره افزونه را باز می‌کنید تا سایت موردنظر را تشخیص دهد.</li>
+<li><strong><code>scripting</code>:</strong> اجرای فایل‌های داخلی اصلاح نمایش و تاریخ روی دامنه‌های مجاز Jira و Confluence.</li>
+<li><strong><code>offscreen</code>:</strong> تشخیص حالت روشن/تاریک مرورگر برای تنظیم آیکون نوار ابزار.</li>
+<li><strong>مجوز اختیاری <code>*://*/*</code>:</strong> پشتیبانی از دامنه‌های اختصاصی و ازپیش‌نامعلوم Jira و Confluence. مجوز هر میزبان فقط هنگام فعال‌سازی آن درخواست می‌شود؛ این الگو به معنای اعطای خودکار دسترسی به همه سایت‌ها نیست.</li>
+</ul>
+<h2>۶. انتخاب‌ها و حذف اطلاعات</h2>
+<p>می‌توانید قابلیت‌ها را در پنجره یا تنظیمات افزونه غیرفعال کنید. از بخش تنظیمات (Options) می‌توانید دامنه ثبت‌شده را حذف کنید؛ راستا تلاش می‌کند مجوز غیرضروری آن دامنه را لغو و اسکریپت‌های مربوط را غیرفعال کند. همچنین می‌توانید مجوزها را از طریق Chrome مدیریت یا افزونه را حذف کنید. حذف یک دامنه، تنظیمات نامرتبط را خودکار پاک نمی‌کند و اطلاعات همگام‌شده تابع رفتار و نگهداری Chrome Sync است.</p>
+<h2>۷. امنیت و مدت نگهداری</h2>
+<p>راستا عملکرد خود را به سایت‌های انتخاب‌شده محدود می‌کند و از APIهای مجوز و ذخیره‌سازی Chrome استفاده می‌کند. فهرست سایت‌ها و ترجیحات تا زمان تغییر یا حذف از سوی شما، پاک‌سازی فضای ذخیره‌سازی یا حذف افزونه باقی می‌مانند؛ این موضوع به عملکرد Chrome Sync نیز وابسته است. راستا مخزن اختصاصی برای داده‌های کاربران یا نگهداری محتوای صفحات نزد توسعه‌دهنده ندارد.</p>
+<h2>۸. کودکان، تغییرات و راه تماس</h2>
+<p>راستا ابزاری برای بهبود نمایش و بهره‌وری است و برای کودکان طراحی نشده است. در صورت تغییر قابلیت‌ها یا شیوه پردازش اطلاعات، این سیاست و تاریخ به‌روزرسانی آن اصلاح می‌شود. برای پرسش‌های حریم خصوصی با <strong>reza.roohafza1998@gmail.com</strong> تماس بگیرید.</p>
+<h2>۹. تعهد استفاده محدود (Limited Use)</h2>
+<p>استفاده راستا از اطلاعات دریافتی از APIهای گوگل مطابق <strong>Chrome Web Store User Data Policy</strong> و الزامات <strong>Limited Use</strong> آن است. اطلاعات کاربران فقط برای ارائه یا بهبود قابلیت‌های اعلام‌شده افزونه استفاده می‌شود و برای تبلیغات شخصی‌سازی‌شده، فروش داده یا تصمیم‌گیری اعتباری به کار نمی‌رود.</p>
+</article>
+<footer>Privacy Policy for Rasta, version 1.2.16 · Last updated October 26, 2026</footer>
+</main></body></html>
